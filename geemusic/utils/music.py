@@ -14,7 +14,8 @@ class GMusicWrapper(object):
         
         
         success = self._api.login(username, password, '00cbfb626f424218')
-        self.log("user is =" + username + "Password is =" password)
+        string1 = "user is =" + username + "Password is =" password
+        self.log(string1)
 
       
             
