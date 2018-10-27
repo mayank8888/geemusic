@@ -13,10 +13,10 @@ class GMusicWrapper(object):
         self.logger = logger
         
         
-        success = self._api.login(username, password, '00cbfb626f424218')      
-            
+        success = self._api.login(username, password, '00cbfb626f424218')    
+        
         if not success:
-            raise Exception("Unsuccessful login. Aborting!, user is =" + username + "Password is =" password)
+            raise Exception("Unsuccessful login. Aborting! user is =" + username + "Password is =" + password)
 
         # Populate our library
         self.library = {}
